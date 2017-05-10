@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>createDiv</title>
+    <link rel="stylesheet" href="createDiv.css" type="text/css" />
+</head>
+<body>
+<button id="button" class="button">button</button>
+<button>button2</button>
+<script src="createDiv.js"></script>
+<script>
+    document.getElementById('button').onclick = function () {
+        myAlert.modal({
+            width:100,
+            height:100,
+            borderRadius:"4px",
+            buttons:[
+                {
+                    text:'---',
+                    onClick:function () {
+                        console.log('---');
+                    }
+                },{
+                    text:'++',
+                    onClick:function () {
+                        console.log('++');
+                    }
+                }
+            ]
+        });
+    }
+</script>
+</body>
+</html>
